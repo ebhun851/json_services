@@ -34,5 +34,5 @@ and you can see ouput from console "Order number is:12345"
 
 # To test rest end-point
 
-Hit the end-point http://localhost:9000/hello-world from browser
+Hit the end-point [http://localhost:9000/hello-world] from browser
 
