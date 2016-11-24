@@ -27,6 +27,11 @@ public class JsonServicesApplication extends WebMvcConfigurerAdapter {
 
 	@Bean
 	public Queue queueReal() {
-		return new ActiveMQQueue("QA.JSON.FIRST");
+		return new ActiveMQQueue("QA.JSON.IN");
+	}
+	
+	@Bean
+	public Queue queueOut() {
+		return new ActiveMQQueue("QA.JSON.OUT");
 	}
 }

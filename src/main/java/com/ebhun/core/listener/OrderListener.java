@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.annotation.JmsListener;
+import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.stereotype.Component;
 
 import com.ebhun.core.activemq.service.StoreService;
@@ -21,7 +22,8 @@ public class OrderListener {
 		this.storeService = storeService;
 	}
 
-	@JmsListener(destination = "QA.JSON.FIRST")
+	@JmsListener(destination = "QA.JSON.IN")
+	@SendTo("QA.JSON.OUT")
 	public String receiveOrderIn(String xml) throws JsonParseException, JsonMappingException, IOException {
 
 		ObjectMapper mapper = new ObjectMapper();
