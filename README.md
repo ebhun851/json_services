@@ -17,12 +17,12 @@ Run "JsonServicesApplication" from eclipse as java file
 
 Run from command line "java -jar build/libs/json_services-0.0.1-SNAPSHOT.jar"
 
-To accces it from web page "http://localhost:9000/health"
-To see all rest endpoint "http://localhost:9000/mappings" , it will should spring accurator api provided and our custom end-points.
+To accces it from web page [http://localhost:9000/health](http://localhost:9000/health)
+To see all rest endpoint [http://localhost:9000/mappings](http://localhost:9000/mappings) , it will should spring accurator api provided and our custom end-points.
 
 # To test active mq msg flow with app
 
-open "http://127.0.0.1:8161/admin/queues.jsp" in browser, For installation & login credentials find here "http://activemq.apache.org/getting-started.html"
+open [http://127.0.0.1:8161/admin/queues.jsp](http://127.0.0.1:8161/admin/queues.jsp) in browser, For installation & login credentials find here "http://activemq.apache.org/getting-started.html"
 
 post sample message in queue(QA.JSON.FIRST)
 
@@ -34,5 +34,5 @@ and you can see ouput from console "Order number is:12345"
 
 # To test rest end-point
 
-Hit the end-point [http://localhost:9000/hello-world] from browser
+Hit the end-point [http://localhost:9000/hello-world](http://localhost:9000/hello-world) from browser
 
