@@ -20,7 +20,7 @@ public class OrderListenerTest {
 	private StoreService storeService;
 
 	@Before
-	private void init() {
+	public void init() {
 		listener = new OrderListener(storeService);
 	}
 
